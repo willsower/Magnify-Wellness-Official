@@ -94,6 +94,9 @@ export default function Home() {
             Our mission is to ensure that everyone gains equal access to mental
             health support through outreach programs and technology.
           </h2>
+          <div className={`${styles.button} mt-12 text-center`}>
+            <Link href="/">Get Involved</Link>
+          </div>
         </section>
 
         {/* About */}
@@ -147,20 +150,9 @@ export default function Home() {
         </section>
 
         {/* Testimonials */}
-        <section>
+        <section className = "relative py-36">
+          <h1 className={styles.home_header}>Testimonials</h1>
           <Carousel />
-        </section>
-
-        {/* Get Involved */}
-        <section
-          className={`${styles.bg_secondary} relative text-center py-12`}
-        >
-          <h1 className="text-white font-bold text-5xl px-4 max-w-2xl md:max-w-5xl m-auto">
-            More than just an app...Join the Magnify Movement!
-          </h1>
-          <div className={`${styles.button} mt-12`}>
-            <Link href="/">Get Involved</Link>
-          </div>
         </section>
 
         {/* Press */}
@@ -225,7 +217,7 @@ export default function Home() {
             </svg>
           </div>
 
-          <div className={styles.metrics_container}>
+          <div className="grid grid-cols-2 md:grid-cols-4 mt-8">
             <Metric num="1000" sign="+" action="users" />
             <Metric num="54" sign="k+" action="youth impacted" />
             <Metric num="100" sign="+" action="active leaders" />
