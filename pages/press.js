@@ -1,17 +1,21 @@
-import Head from "next/head";
-import Nav from "../components/nav";
-import Footer from "../components/footer";
+import Layout from "../components/layout";
+import Link from "next/link";
 
-export default function Press() {
+import { press } from "../data/press_data";
+
+// Fetch data on client side
+export async function getStaticProps() {
+  return {
+    props: {
+      data: press,
+    },
+  };
+}
+
+export default function Press({ data }) {
   return (
-    <div>
-      <Head>
-        <title>Press</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-      </Head>
-      <Nav />
-      <main></main>
-      <Footer />
-    </div>
+    <Layout title = "Press">
+      
+    </Layout>
   );
 }
