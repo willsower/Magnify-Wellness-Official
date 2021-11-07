@@ -1,7 +1,7 @@
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 import Image from "next/image";
 
-import { team } from "../data/team_data/team_home";
+import { team } from "../../data/team_data/team_home";
 
 // Fetch data on client side
 export async function getStaticProps() {
@@ -46,7 +46,7 @@ export default function Team({ data }) {
           <div className="sm:grid sm:grid-cols-2 sm:max-w-xl sm:m-auto md:grid-cols-3 md:max-w-4xl">
             {section.departments.map((department) => (
               <div className="border-2 border-yellow-200 w-56 h-80 md:w-64 mt-12 m-auto hover:cursor-pointer">
-                <a href="/">
+                <a href={`/team/${department.path}`}>
                   <div className="text-center">
                     <Image
                       src={`/img/team/department_images/${department.departmentImage}`}
