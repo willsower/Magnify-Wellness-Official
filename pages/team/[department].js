@@ -8,7 +8,7 @@ import { logistics } from "../../data/team_data/departments/logistics";
 import { marketing } from "../../data/team_data/departments/marketing";
 import { mental } from "../../data/team_data/departments/mental_health_changemakers";
 import { mentorship } from "../../data/team_data/departments/mentorship";
-import { partnership } from "../../data/team_data/departments/partnerships";
+import { partnerships } from "../../data/team_data/departments/partnerships";
 import { research } from "../../data/team_data/departments/research_and_development";
 import { social } from "../../data/team_data/departments/social_media";
 import { tech } from "../../data/team_data/departments/tech";
