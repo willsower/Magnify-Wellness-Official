@@ -69,10 +69,10 @@ function Nav() {
                   <Link href="/team">Team</Link>
                 </div>
                 <div>
-                  <Link href="/">Careers</Link>
+                  <Link href="https://docs.google.com/forms/d/1NE00gaO3kC3XHI6a6AQKQgLB94jsKYyoOOzJp52C7M0/viewform?edit_requested=true">Careers</Link>
                 </div>
                 <div>
-                  <Link href="/">Buy our Merch</Link>
+                  <Link href="/merchandise">Buy our Merch</Link>
                 </div>
               </div>
             </div>
