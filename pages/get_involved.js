@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/layout";
-import styles from "../styles/GetInvolved.module.css";
 
 // Data
 import { get_involved } from "../data/getting_involved_data";
@@ -40,8 +39,8 @@ export default function GettingInvolved({ data }) {
             {/* Loop through buttons (if more than 1) */}
             {item.buttons.map((button) => (
               <>
-                <div className={`${styles.button} mt-4 text-center w-44`}>
-                  <Link href= {button.path}>{button.name}</Link>
+                <div className={"button mt-4 text-center w-44"}>
+                  <Link href={button.path}>{button.name}</Link>
                 </div>
               </>
             ))}
