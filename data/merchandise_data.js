@@ -1,8 +1,8 @@
-export const merchItems = [
+export const merchandise = [
   {
     name: "Hoodie",
     price: "$30",
-    image: "black_hooddie.png",
+    image: "black_hoodie.png",
     link: "",
   },
   {
