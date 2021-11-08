@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Layout from "../../components/layout";
 import Image from "next/image";
 import { art } from "../../data/team_data/departments/art";
@@ -94,19 +94,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Department({ data }) {
-  const [isHovering, setIsHovered] = useState(false);
-  const onMouseEnter = () => setIsHovered(true);
-  const onMouseLeave = () => setIsHovered(false);
-
-  const imagesRef = useRef({});
-
-  const handleHover = (e, id) => {
-      gsap.to(imagesRef.current[id], { display: "block" })
-  }
-
-  const handleHoverExit = (e, id) => {
-      gsap.to(imagesRef.current[id], { display: "none" })
-  }
+  const [indexHovered, setIndexHovered] = useState(-1);
 
   return (
     <>
@@ -160,11 +148,11 @@ export default function Department({ data }) {
 
               {/* Rest of Team */}
               <div className="mt-12 md:grid md:grid-cols-2 md:gap-4 md:max-w-xl md:m-auto md:mt-12 lg:grid-cols-3 lg:max-w-4xl">
-                {section.team.map((person) => (
+                {section.team.map((person, index) => (
                   <div
-                    className="w-60 h-44 bg-blue-200 m-auto mt-4 text-center p-4 relative"
-                    onMouseEnter={(e) => handleHover(e, person.name)}
-                        onMouseOut={(e) => handleHoverExit(e, person.name)}
+                    className="w-60 h-44 bg-blue-200 m-auto mt-4 text-center p-4 relative hover:bg-yellow-400 rounded-lg"
+                    onMouseEnter={() => setIndexHovered(index)}
+                    onMouseLeave={() => setIndexHovered(-1)}
                   >
                     {person.image == "" ? (
                       <Image
@@ -183,7 +171,7 @@ export default function Department({ data }) {
                     )}
                     <p className="mt-4 font-bold text-lg">{person.name}</p>
 
-                    <div className=" bg-blue-200 w-60 p-4 z-50 absolute left-0" ref={(el) => (imagesRef.current[person.name] = el)}>{person.description}</div>
+                    {indexHovered == index && <div className=" bg-yellow-400 w-60 p-4 z-50 absolute left-0 rounded-lg">{person.description}</div>}
                   </div>
                 ))}
               </div>
