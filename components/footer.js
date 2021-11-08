@@ -50,8 +50,8 @@ function Footer() {
         {/* Company */}
         <div className="md:px-5">
           <p className={styles.footer_header}>Company</p>
-          <Link href="/">
-            <p className={styles.footer_item}>About</p>
+          <Link href="/team">
+            <p className={styles.footer_item}>The Team</p>
           </Link>
           <br />
           <Link href="/">
@@ -71,7 +71,7 @@ function Footer() {
             <p className={styles.footer_item}>Contact Us</p>
           </Link>
           <br />
-          <Link href="/team">
+          <Link href="https://docs.google.com/forms/d/1NE00gaO3kC3XHI6a6AQKQgLB94jsKYyoOOzJp52C7M0/viewform?edit_requested=true">
             <p className={styles.footer_item}>Join the Team</p>
           </Link>
           <br />
