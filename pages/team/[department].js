@@ -1,3 +1,4 @@
+import React, { useState, useRef } from "react";
 import Layout from "../../components/layout";
 import Image from "next/image";
 import { art } from "../../data/team_data/departments/art";
@@ -85,8 +86,6 @@ export async function getStaticProps({ params }) {
       break;
   }
 
-  console.log(object);
-
   return {
     props: {
       data: object,
@@ -95,75 +94,101 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Department({ data }) {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
+
+  const imagesRef = useRef({});
+
+  const handleHover = (e, id) => {
+      gsap.to(imagesRef.current[id], { display: "block" })
+  }
+
+  const handleHoverExit = (e, id) => {
+      gsap.to(imagesRef.current[id], { display: "none" })
+  }
+
   return (
     <>
       {data.map((section) => (
         <Layout title={`Meet the ${section.departmentName} Team`}>
-          <h1 className="font-bold text-4xl text-center pt-24 md:text-5xl">
-            Meet the {section.departmentName} Team
-          </h1>
-          <p className="mt-12 text-center px-6 sm:px-16 md:max-w-5xl md:m-auto md:mt-12">
-            {section.departmentDescription}
-          </p>
+          {/* If no content, then empty team */}
+          {section.departmentDescription == "" ? (
+            <h1 className="font-bold text-4xl text-center pt-24 pb-12 md:text-5xl">
+              {section.departmentName} Team Coming Soon!
+            </h1>
+          ) : (
+            // Else display team
+            <>
+              <h1 className="font-bold text-4xl text-center pt-24 md:text-5xl">
+                Meet the {section.departmentName} Team
+              </h1>
+              <p className="mt-12 text-center px-6 sm:px-16 md:max-w-5xl md:m-auto md:mt-12">
+                {section.departmentDescription}
+              </p>
 
-          {/* Featured */}
-          {section.featured.map((person) => (
-            <div className="mt-12 text-center px-4 lg:flex lg:justify-center">
-              {/* Image */}
-              <div className="lg:mr-6 lg:mt-12">
-                {person.image == "" ? (
-                  <Image
-                    src={`/img/team/members/no_image.png`}
-                    width="200"
-                    height="200"
-                    className="rounded-full"
-                  />
-                ) : (
-                  <Image
-                    src={`/img/team/members/${person.image}`}
-                    width="200"
-                    height="200"
-                    className="rounded-full"
-                  />
-                )}
-              </div>
+              {/* Featured */}
+              {section.featured.map((person) => (
+                <div className="mt-12 text-center px-4 lg:flex lg:justify-center">
+                  {/* Image */}
+                  <div className="lg:mr-6 lg:mt-12">
+                    {person.image == "" ? (
+                      <Image
+                        src={`/img/team/members/no_image.png`}
+                        width="200"
+                        height="200"
+                        className="rounded-full"
+                      />
+                    ) : (
+                      <Image
+                        src={`/img/team/members/${person.image}`}
+                        width="200"
+                        height="200"
+                        className="rounded-full"
+                      />
+                    )}
+                  </div>
 
-              {/* Content */}
-              <div className="mt-4 md:max-w-xl md:m-auto md:mt-4 lg:m-0 lg:mt-4 lg:max-w-2xl">
-                <h1 className="text-4xl">{person.name}</h1>
-                <p className="italic text-2xl mt-2">{person.jobTitle}</p>
-                <p className="text-lg mt-2">{person.description}</p>
-              </div>
-            </div>
-          ))}
-
-          {/* Rest of Team */}
-          <div className = "mt-12 md:grid md:grid-cols-2 md:gap-4 md:max-w-xl md:m-auto md:mt-12 lg:grid-cols-3 lg:max-w-4xl">
-            {section.team.map((person) => (
-              <div className="w-60 h-44 bg-blue-200 m-auto mt-4 text-center p-4">
-                {person.image == "" ? (
-                  <Image
-                    src={`/img/team/members/no_image.png`}
-                    width="100"
-                    height="100"
-                    className="rounded-full"
-                  />
-                ) : (
-                  <Image
-                    src={`/img/team/members/${person.image}`}
-                    width="100"
-                    height="100"
-                    className="rounded-full"
-                  />
-                )}
-                <p className = "mt-4 font-bold text-lg">{person.name}</p>
-
-                <div className = "hidden">
-                    {person.description}
+                  {/* Content */}
+                  <div className="mt-4 md:max-w-xl md:m-auto md:mt-4 lg:m-0 lg:mt-4 lg:max-w-2xl">
+                    <h1 className="text-4xl">{person.name}</h1>
+                    <p className="italic text-2xl mt-2">{person.jobTitle}</p>
+                    <p className="text-lg mt-2">{person.description}</p>
+                  </div>
                 </div>
+              ))}
+
+              {/* Rest of Team */}
+              <div className="mt-12 md:grid md:grid-cols-2 md:gap-4 md:max-w-xl md:m-auto md:mt-12 lg:grid-cols-3 lg:max-w-4xl">
+                {section.team.map((person) => (
+                  <div
+                    className="w-60 h-44 bg-blue-200 m-auto mt-4 text-center p-4 relative"
+                    onMouseEnter={(e) => handleHover(e, person.name)}
+                        onMouseOut={(e) => handleHoverExit(e, person.name)}
+                  >
+                    {person.image == "" ? (
+                      <Image
+                        src={`/img/team/members/no_image.png`}
+                        width="100"
+                        height="100"
+                        className="rounded-full"
+                      />
+                    ) : (
+                      <Image
+                        src={`/img/team/members/${person.image}`}
+                        width="100"
+                        height="100"
+                        className="rounded-full"
+                      />
+                    )}
+                    <p className="mt-4 font-bold text-lg">{person.name}</p>
+
+                    <div className=" bg-blue-200 w-60 p-4 z-50 absolute left-0" ref={(el) => (imagesRef.current[person.name] = el)}>{person.description}</div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </>
+          )}
         </Layout>
       ))}
     </>

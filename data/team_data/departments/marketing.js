@@ -3,6 +3,7 @@ export const marketing = [
     departmentName: "Marketing",
     departmentDescription:
       "The Marketing team works to promote Magnify Wellness and its other initiatives in partnership with other teams in Magnify and is split into three subgroups. The Newsletter Team creates the monthly newsletter with the help of the art team, the Advertisement Team works with the Social Media Team to create post captions and a schedule for uploading things to our social media platforms, and the Ambassador Team works with various members from different teams to oversee our new Ambassador Fellowship.",
+      departmentImagePath: "marketing/",
 
     // Featured people, this is usually team lead
     featured: [],
@@ -13,19 +14,19 @@ export const marketing = [
         name: "Jimin Lee",
         description:
           "Hi! My name is Jimin Lee, a high school freshman from South Korea. I joined Magnify Wellness because mental health is so important and I wanted to contribute to the great initiative Magnify has.",
-        image: "",
+        image: "jimin_lee.jpg",
       },
       {
         name: "Isabelle Gu",
         description:
           "Isabelle Gu is a junior at Westborough High School who enjoys programming and drawing in her free time. She joined Magnify Wellness in hopes to make mental health resources more accessible to everyone.",
-        image: "",
+        image: "isabelle_gu.jpeg",
       },
       {
         name: "Vedika Kothari",
         description:
           "Vedika is a sophomore in Los Angeles, California and hopes to pursue a career in computer science. She holds the position of Director of Social Media. She enjoys taking part in Model United Nations, dance classes, as well as travelling in her free time.",
-        image: "",
+        image: "vedika_kothari.jpeg",
       },
       {
         name: "Vivian Jiang",
@@ -37,19 +38,19 @@ export const marketing = [
         name: "Jean Hyun Kim",
         description:
           "Jean Hyun Kim is currently a high school senior in Seoul, South Korea. He is a Mental Health Changemaker, and a member of the marketing and partnerships team at Magnify Wellness. He loves watching movies and talking with people.",
-        image: "",
+        image: "jean_hyun_kim.jpg",
       },
       {
         name: "Autumn Tyler",
         description:
           "Autumn Tyler is a high school sophomore and has always wanted to help her community in a positive way. She joined Magnify to help people realize how important their mental health is and she’s excited to continue her journey.",
-        image: "",
+        image: "autumn_tyler.jpeg",
       },
       {
         name: "Shruti Kale",
         description:
           "My name is Shruti Kale and I'm a rising sophomore in high school from the Bay Area. I joined Magnify Wellness to educate and help others about mental health, and I'm excited to be a part of such an amazing project. In my free time, I enjoy painting, playing flute, singing, and dancing.",
-        image: "",
+        image: "shruti_kale.png",
       },
       {
         name: "Michelle Chen",

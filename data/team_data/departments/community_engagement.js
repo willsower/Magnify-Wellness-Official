@@ -3,6 +3,7 @@ export const community = [
     departmentName: "Community Engagement",
     departmentDescription:
       "The community engagement team works on implementing fun events and activities for the Magnify community as well as keeping the Slack a friendly and welcoming place.",
+    departmentImagePath: "community_engagement/",
 
     // Featured people, this is usually team lead
     featured: [
@@ -11,7 +12,7 @@ export const community = [
         jobTitle: "Director of Community Engagement",
         description:
           "Tamara Gruslova is a high school junior from Texas. She plans to have a career in STEM. She strives to make a positive impact in society and increase the resources available for mental health.",
-        image: "",
+        image: "tamara_gruslova.png",
       },
     ],
 
@@ -21,7 +22,7 @@ export const community = [
         name: "Coco Ji",
         description:
           "Coco is a grade 8 student at St. Johns School. She lives in Vancouver west, BC Canada. Her hobbies are playing the piano, cello, and singing. Coco also enjoys physical activities like volleyball and basketball. Coco also likes to explore the things she is interested in.",
-        image: "",
+        image: "coco_ji.jpeg",
       },
       {
         name: "Deeksha Cirigadi",
@@ -33,19 +34,19 @@ export const community = [
         name: "Athena Samonte",
         description:
           "Athena Samonte is a university freshman from Canada. She strives to eliminate the stigma around mental health and joined Magnify Wellness with the hopes of doing so with like-minded individuals.",
-        image: "",
+        image: "athena_samonte.jpg",
       },
       {
         name: "Nora VanRees",
         description:
           "Nora VanRees is a high school sophomore at the Vancouver School of Arts and Academics in Washington State. At Magnify, she serves as the Director of Mental Health Changemakers, executive secretary, and more. In her free time, Nora enjoys volunteering and writing.",
-        image: "",
+        image: "nora_vanrees.jpg",
       },
       {
         name: "Sanya Gupta",
         description:
           "Sanya Gupta is a university freshman persuing astrophysics and applied math. As part of CM, Sanya hopes to help the community find solidarity with one another.",
-        image: "",
+        image: "sanya_gupta.jpg",
       },
     ],
   },
