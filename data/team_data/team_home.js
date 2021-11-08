@@ -76,7 +76,8 @@ export const team = [
         },
         {
             departmentName: "Logistics",
-            departmentImage: "logistics.png"
+            departmentImage: "logistics.png",
+            path: "logistics"
         },
         {
             departmentName: "Community Engagement",

@@ -3,6 +3,7 @@ export const finance = [
     departmentName: "Finance",
     departmentDescription:
       "Finance Team is responsible for obtaining, maintaining, and gaining money for Magnify Wellness via creating budgets, applying for grants such as Bay Area Global Health Challenges, J.M.K Innovation, Fast Forward Accelerator Grant, and S.M.A.R.T grant. Finance Team is also responsible for collaborating with the tech and social media teams in determining prices for current and future magnify wellness merch to be put on the website.",
+      departmentImagePath: "finance/",
 
     // Featured people, this is usually team lead
     featured: [
@@ -11,7 +12,7 @@ export const finance = [
         jobTitle: "Co-Director of Finance",
         description:
           "Lisa is a 23-year old university graduate from Canada whose background is in business and IT. She joined Magnify Wellness with a passion for empowering people and increasing access to free mental health support for all.",
-        image: "",
+        image: "lisa_ou.jpg",
       },
       {
         name: "Zoe Tenenbaum",
@@ -28,19 +29,19 @@ export const finance = [
         name: "Labib Joarder",
         description:
           "My name is Labib Joarder and I’m currently attending the University of Washington. I joined Magnify Wellness because I am really interested in helping people my age with their mental health.",
-        image: "",
+        image: "labib_joarder.jpg",
       },
       {
         name: "Angelina Tsuboi",
         description:
           "Angelina is currently a sophomore attending a highschool in Palos Verdes, California. She joined Magnify Wellness to enhance the mental wellbeing of students and to help them lead meaningful lives.",
-        image: "",
+        image: "angelina_tsuboi.jpeg",
       },
       {
         name: "Autumn Tyler",
         description:
           "My name is Autumn Tyler and I’m a sophomore in High School. I joined Magnify because I want to help my community with their mental health issues.",
-        image: "",
+        image: "autumn_tyler.jpeg",
       },
     ],
   },

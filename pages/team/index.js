@@ -49,7 +49,7 @@ export default function Team({ data }) {
                 <a href={`/team/${department.path}`}>
                   <div className="text-center">
                     <Image
-                      src={`/img/team/department_images/${department.departmentImage}`}
+                      src={`/img/team/department_logos/${department.departmentImage}`}
                       height="200"
                       width="200"
                     />
