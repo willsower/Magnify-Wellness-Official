@@ -28,7 +28,7 @@ function Footer() {
           {/* <Link href="/">
             <p className={styles.footer_item}>Donate</p>
           </Link> */}
-          <br />
+          {/* <br /> */}
           <Link href="/merchandise">
             <p className={styles.footer_item}>Buy Merch</p>
           </Link>
