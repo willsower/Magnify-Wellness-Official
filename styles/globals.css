@@ -1,5 +1,17 @@
+:root {
+    --primary-color: #33cccc;
+}
+
+.border-primary {
+    border-color: var(--primary-color); 
+}
+
+.bg-primary {
+    border-color: var(--primary-color);
+}
+
 .button {
-    background-color: #33cccc;
+    background-color: var(--primary-color);
     border-radius: 0.50rem;
     padding: 0.33rem 0rem;
     color: #fff;
@@ -8,8 +20,4 @@
 .button:hover {
     cursor: pointer;
     color: #000;
-}
-
-.border-primary {
-    border-color: #33cccc; 
 }
