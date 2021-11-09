@@ -5,6 +5,10 @@
     z-index: 1;
 }
 
+.scale:hover {
+    transform: scale(1.1);
+}
+
 /* Dropdown Nav CSS */
 .dropdown {
     overflow: hidden;
@@ -33,10 +37,6 @@
     margin-top: 4px;
 }
 
-.top_item:hover {
-    transform: scale(1.1);
-}
-
 /* End of Dropdown Nav CSS */
 
 .links {
@@ -44,4 +44,11 @@
     margin-right: 1rem;
     margin-top: 0.5rem;
     order: 2;
+}
+
+/* Open Nav On Small View */
+
+.hamburger_top_item {
+    text-align: right;
+    margin-top: 0.5rem;
 }
