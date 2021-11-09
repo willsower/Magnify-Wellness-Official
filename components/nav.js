@@ -46,24 +46,24 @@ function Nav() {
           >
             <div
               className={`${
-                isOpen ? `${styles.hamburger_top_item}` : `${styles.top_item}`
-              } ${styles.scale}`}
+                isOpen && `${styles.hamburger_top_item}`
+              } ${styles.top_item} ${styles.scale}`}
             >
               <Link href="/app">App</Link>
             </div>
 
             <div
               className={`${
-                isOpen ? `${styles.hamburger_top_item}` : `${styles.top_item}`
-              }  ${styles.scale}`}
+                isOpen && `${styles.hamburger_top_item}`
+              } ${styles.top_item} ${styles.scale}`}
             >
               <Link href="/get_involved">Get Involved</Link>
             </div>
 
             {/* News Dropdown */}
-            <div className={`${!isOpen && `${styles.dropdown}`}`}>
-              <button className={`${isOpen && "hidden"}`}>News</button>
-              <div className={`${!isOpen && `${styles.dropdown_content}`}`}>
+            <div className={styles.dropdown}>
+              <button className="hidden md:block">News</button>
+              <div className={styles.dropdown_content}>
                 <p
                   className={`${
                     isOpen && `${styles.hamburger_top_item}  ${styles.scale}`
@@ -92,9 +92,9 @@ function Nav() {
             {/* End of News Dropdown */}
 
             {/* Company Dropdown */}
-            <div className={`${!isOpen && `${styles.dropdown}`}`}>
-              <button className={`${isOpen && "hidden"}`}>Company</button>
-              <div className={`${!isOpen && `${styles.dropdown_content}`}`}>
+            <div className={styles.dropdown}>
+              <button className= "hidden md:block">Company</button>
+              <div className={styles.dropdown_content}>
                 <div
                   className={`${
                     isOpen && `${styles.hamburger_top_item}  ${styles.scale}`
@@ -124,13 +124,15 @@ function Nav() {
 
             <div
               className={`${
-                isOpen ? `${styles.hamburger_top_item}` : `${styles.top_item}`
-              }  ${styles.scale}`}
+                isOpen && `${styles.hamburger_top_item}`
+              } ${styles.top_item} ${styles.scale}`}
             >
               <Link href="/contact">Contact</Link>
             </div>
 
-            {/* <div className={`${isOpen ? `${styles.hamburger_top_item}` : `${styles.top_item}`}`}>
+            {/* <div className={`${
+                isOpen && `${styles.hamburger_top_item}`
+              } ${styles.top_item} ${styles.scale}`}>
               <Link href="/">
                 <p className="font-bold hover:cursor-pointer">Donate</p>
               </Link>
