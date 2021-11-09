@@ -28,7 +28,9 @@ export default function Merchandise({ data }) {
       </div>
 
       {/* Merchandise */}
-      <div className="text-center mt-12 sm:grid sm:grid-cols-2 sm:max-w-lg sm:m-auto md:grid-cols-3 md:max-w-2xl">
+      {/* Commenting first div out. When you add more merchandise, (3 or more items use this line instead) */}
+      {/* <div className="text-center mt-12 sm:grid sm:grid-cols-2 sm:max-w-lg sm:m-auto md:grid-cols-3 md:max-w-2xl"> */}
+      <div className="text-center mt-12 sm:grid sm:grid-cols-2 sm:max-w-lg sm:m-auto">
         {data.map((item) => (
           <div className="mt-4 sm:mt-12">
             <Image
