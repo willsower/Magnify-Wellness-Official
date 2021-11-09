@@ -25,9 +25,9 @@ function Footer() {
             <p className={styles.footer_item}>App</p>
           </Link>
           <br />
-          <Link href="/">
+          {/* <Link href="/">
             <p className={styles.footer_item}>Donate</p>
-          </Link>
+          </Link> */}
           <br />
           <Link href="/merchandise">
             <p className={styles.footer_item}>Buy Merch</p>
