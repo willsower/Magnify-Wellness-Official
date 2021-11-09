@@ -13,7 +13,7 @@ export const get_involved = [
       // Button 1
       {
         name: "View the Database",
-        path: "",
+        path: "https://mentalhealthdatabase.carrd.co/",
       },
     ],
   },
@@ -27,7 +27,7 @@ export const get_involved = [
       // Button 1
       {
         name: "Join Slack",
-        path: "",
+        path: "https://join.slack.com/t/magnifywellne-a547546/shared_invite/zt-kkcfm6w3-6TGPvdgfGg1nvaXDGe1vJA",
       },
     ],
   },
@@ -41,7 +41,7 @@ export const get_involved = [
       // Button 1
       {
         name: "Request a Mentor",
-        path: "",
+        path: "https://forms.gle/7DudVJR2w2iELdZc6",
       },
     ],
   },
@@ -55,7 +55,7 @@ export const get_involved = [
       // Button 1
       {
         name: "Join the Ambassadors",
-        path: "",
+        path: "https://yun43q3087e.typeform.com/to/hMDWYzJG",
       },
     ],
   },
@@ -69,12 +69,12 @@ export const get_involved = [
       // Button 1
       {
         name: "View Open Positions",
-        path: "",
+        path: "https://drive.google.com/file/d/1wCTBV5qWRP0MwK3Sb4cu4sht8tHVPbTV/view?usp=sharing",
       },
       // Button 2
       {
         name: "Join the Team",
-        path: "",
+        path: "https://docs.google.com/forms/d/1NE00gaO3kC3XHI6a6AQKQgLB94jsKYyoOOzJp52C7M0/viewform?edit_requested=true",
       },
     ],
   },
@@ -88,7 +88,7 @@ export const get_involved = [
       // Button 1
       {
         name: "Learn More",
-        path: "",
+        path: "https://magnifywellness.org/magnify-you",
       },
     ],
   },
