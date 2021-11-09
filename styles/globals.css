@@ -9,3 +9,7 @@
     cursor: pointer;
     color: #000;
 }
+
+.border-primary {
+    border-color: #33cccc; 
+}
