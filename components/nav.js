@@ -82,11 +82,11 @@ function Nav() {
               <Link href="/contact">Contact</Link>
             </div>
 
-            <div className={styles.top_item}>
+            {/* <div className={styles.top_item}>
               <Link href="/">
                 <p className="font-bold hover:cursor-pointer">Donate</p>
               </Link>
-            </div>
+            </div> */}
           </ul>
         </div>
       </nav>

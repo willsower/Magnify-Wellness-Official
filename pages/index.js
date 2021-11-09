@@ -1,13 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import Layout from "../components/layout";
+import Head from "next/head";
+import Nav from "../components/nav";
+import Footer from "../components/footer";
 import Carousel from "../components/home/carousel";
 import { Feature, Press, Blog, Metric } from "../components/home/helper";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <Layout title="Magnify Wellness">
+    <>
+      <Head>
+        <title>Magnify Wellness</title>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+      </Head>
+      <Nav />
+
       {/* Home */}
       <section id={styles.home}>
         <div id={styles.home_content}>
@@ -258,6 +266,8 @@ export default function Home() {
           </form>
         </div>
       </section>
-    </Layout>
+
+      <Footer />
+    </>
   );
 }

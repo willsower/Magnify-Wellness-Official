@@ -25,10 +25,10 @@ function Footer() {
             <p className={styles.footer_item}>App</p>
           </Link>
           <br />
-          <Link href="/">
+          {/* <Link href="/">
             <p className={styles.footer_item}>Donate</p>
-          </Link>
-          <br />
+          </Link> */}
+          {/* <br /> */}
           <Link href="/merchandise">
             <p className={styles.footer_item}>Buy Merch</p>
           </Link>
@@ -54,11 +54,11 @@ function Footer() {
             <p className={styles.footer_item}>The Team</p>
           </Link>
           <br />
-          <Link href="/">
+          <Link href="https://drive.google.com/file/d/1PV4Cn4FCqulviYodyBf7TjJ5d92Tvkkx/view">
             <p className={styles.footer_item}>Privacy policy</p>
           </Link>
           <br />
-          <Link href="/">
+          <Link href="https://drive.google.com/file/d/1wakkAqzzJhi-1OTwovFJVeJad8ULBeAO/view">
             <p className={styles.footer_item}>Terms of service</p>
           </Link>
           <br />
@@ -83,28 +83,28 @@ function Footer() {
           <div className="flex md:block">
             {/* Facebook */}
             <div className={styles.footer_social_item}>
-              <a href="/">
+              <a href="https://www.facebook.com/magnifywellnessapp/">
                 <Image src="/icon/facebook.png" height="25" width="25"/>
               </a>
             </div>
 
             {/* Twitter */}
             <div className={styles.footer_social_item}>
-              <a href="/">
+              <a href="https://twitter.com/magnifywellness?lang=en">
                 <Image src="/icon/twitter.png" height="25" width="25"/>
               </a>
             </div>
 
             {/* LinkedIn */}
             <div className={styles.footer_social_item}>
-              <a href="/">
+              <a href="https://www.linkedin.com/company/magnifyapp">
                 <Image src="/icon/linkedin.png" height="25" width="25"/>
               </a>
             </div>
 
             {/* Instagram */}
             <div className={styles.footer_social_item}>
-              <a href="/">
+              <a href="https://www.instagram.com/magnifywellnessblog/">
                 <Image src="/icon/instagram.png" height="25" width="25"/>
               </a>
             </div>
