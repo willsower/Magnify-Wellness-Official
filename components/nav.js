@@ -23,7 +23,7 @@ function Nav() {
 
         {/* Links */}
         <div className={styles.links}>
-          <div className="block md:hidden">
+          <div className="text-right md:hidden">
             {/* Hamburger */}
             <button
               className="px-3 py-2 border rounded hover:text-white hover:border-white"
@@ -64,15 +64,27 @@ function Nav() {
             <div className={`${!isOpen && `${styles.dropdown}`}`}>
               <button className={`${isOpen && "hidden"}`}>News</button>
               <div className={`${!isOpen && `${styles.dropdown_content}`}`}>
-                <p className = {`${isOpen && `${styles.hamburger_top_item}  ${styles.scale}`}`}>
+                <p
+                  className={`${
+                    isOpen && `${styles.hamburger_top_item}  ${styles.scale}`
+                  }`}
+                >
                   <Link href="/events">Events</Link>
                 </p>
-                <p className = {`${isOpen && `${styles.hamburger_top_item}  ${styles.scale}`}`}>
+                <p
+                  className={`${
+                    isOpen && `${styles.hamburger_top_item}  ${styles.scale}`
+                  }`}
+                >
                   <Link href="https://magnifywellnessblog.wordpress.com/">
                     Blog
                   </Link>
                 </p>
-                <p className = {`${isOpen && `${styles.hamburger_top_item}  ${styles.scale}`}`}>
+                <p
+                  className={`${
+                    isOpen && `${styles.hamburger_top_item}  ${styles.scale}`
+                  }`}
+                >
                   <Link href="/press">Press</Link>
                 </p>
               </div>
@@ -83,15 +95,27 @@ function Nav() {
             <div className={`${!isOpen && `${styles.dropdown}`}`}>
               <button className={`${isOpen && "hidden"}`}>Company</button>
               <div className={`${!isOpen && `${styles.dropdown_content}`}`}>
-                <div className = {`${isOpen && `${styles.hamburger_top_item}  ${styles.scale}`}`}>
+                <div
+                  className={`${
+                    isOpen && `${styles.hamburger_top_item}  ${styles.scale}`
+                  }`}
+                >
                   <Link href="/team">Team</Link>
                 </div>
-                <div className = {`${isOpen && `${styles.hamburger_top_item}  ${styles.scale}`}`}>
+                <div
+                  className={`${
+                    isOpen && `${styles.hamburger_top_item}  ${styles.scale}`
+                  }`}
+                >
                   <Link href="https://docs.google.com/forms/d/1NE00gaO3kC3XHI6a6AQKQgLB94jsKYyoOOzJp52C7M0/viewform?edit_requested=true">
                     Careers
                   </Link>
                 </div>
-                <div className = {`${isOpen && `${styles.hamburger_top_item}  ${styles.scale}`}`}>
+                <div
+                  className={`${
+                    isOpen && `${styles.hamburger_top_item}  ${styles.scale}`
+                  }`}
+                >
                   <Link href="/merchandise">Buy our Merch</Link>
                 </div>
               </div>

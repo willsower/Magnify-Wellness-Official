@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Magnify Wellness</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/img/logo.png" />
       </Head>
       <Nav />
 
