@@ -13,7 +13,7 @@
 /* Background */
 
 .bg-primary {
-    border-color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 .bg-secondary {
