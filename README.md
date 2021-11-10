@@ -29,7 +29,7 @@ Have 2 initiatives:
 ## TODOs
 
 1. Get navbar to look cleaner
-2. `[department].js` is hacky. Fix this to be more dynamic. Maybe use next/dynamic
-5. Donate form doesn't work, I need info to build this
-6. Art team is empty (currently I put placeholder for this)
-7. Get testemonials to display elegantly
+2. Donate form doesn't work, I need info to build this
+3. Art team is empty (currently I put placeholder for this)
+4. Get testemonials to display elegantly
+5. App page seems clunky, new/better content?
