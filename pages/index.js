@@ -161,7 +161,7 @@ export default function Home() {
           <Press
             image_path="/img/home/press/brain.png"
             press_name="STEAMChangers: Abigayle Peterson"
-            article_link=""
+            article_link="https://steampowerca.org/steamchangers/abbypeterson"
             hei="110"
             wid="110"
           />
@@ -169,7 +169,7 @@ export default function Home() {
           <Press
             image_path="/img/home/press/stem_lights.png"
             press_name="Mental Health during the Pandemic: STEM spotlight"
-            article_link=""
+            article_link="https://stemlights.stemchats.org/edition/21.html"
             hei="70"
             wid="200"
           />
@@ -177,7 +177,7 @@ export default function Home() {
           <Press
             image_path="/img/home/press/channel_kindness.png"
             press_name="Magnifying the Importance of Mental Health"
-            article_link=""
+            article_link="https://www.channelkindness.org/magnifying-mental-health/?fbclid=IwAR1jUr6PQaTw6RQZBXeizKq6OmQiSjfbq1YSWrTj8rJpgUVybBNeKf1QErs"
             hei="80"
             wid="80"
           />
@@ -231,17 +231,13 @@ export default function Home() {
           <Blog
             image_path="/img/home/press/meet-the-writers.png"
             press_name="Meet the Writers"
-            article_link=""
-            hei="130"
-            wid="130"
+            article_link="https://magnifywellness.org/blog.html"
           />
 
           <Blog
             image_path="/img/home/press/spotlight.png"
             press_name="Spotlight on Magnify's Founder: Abigayle Peterson"
-            article_link=""
-            hei="120"
-            wid="120"
+            article_link="https://magnifywellnessblog.wordpress.com/2020/12/07/spotlight-abigayle-peterson-the-stories-within-magnifys-code/"
           />
         </div>
       </section>

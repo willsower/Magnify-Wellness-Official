@@ -1,6 +1,15 @@
 # Adding Team Members
 
-[Go back to Home](index.md)
+## Navigation:
+- [Home](README.md)
+- [Getting Started](getting-started.md)
+- Updating Codebase, Please Read
+    - [Adding app reviews](adding-app-reviews.md)
+    - [Adding getting involved](adding-getting-involved.md)
+    - [Adding partnership](adding-partners.md)
+    - [Adding Press](adding-press.md)
+    - [Adding Merchandise](adding-merchandise.md)
+    - [Adding team members](adding-team-member.md)
 
 ## Files (An Overview)
 
@@ -46,7 +55,7 @@ Wow! Congrats, you are adding department XYZ. Here are the steps to do so.
 
 2. Go into `/data/team_data/team_home.js`. Scroll down to the bottom and you will see a structure similiar to the following:
 
-```JSON
+```javascript
 departments: [
     {
         departmentName: "",
@@ -58,7 +67,7 @@ departments: [
 
 Copy the following:
 
-```JSON
+```javascript
     {
         departmentName: "",
         departmentImage: "",
@@ -74,7 +83,7 @@ And add it to the continuation of the departments array. If you get confused, lo
 
 3. Go into `pages/team/[department].js` file and in the getStaticPaths() function add the following:
 
-```JSON
+```javascript
 {params: {department: ""}},
 ```
 
@@ -86,7 +95,7 @@ Read the next entries below to figure out how to add people to the files. You ca
 
 TEMPLATE:
 
-```JSON
+```javascript
 export const change_name_here = [
   {
     departmentName: "",
@@ -113,12 +122,12 @@ Congrats! You just got a CMO or CTO, they should be added to the home page of th
 
 Copy the following to do so:
 
-```JSON
+```javascript
 {
-    name: ""
+    name: "",
     jobTitle: "",
-    description: ""
-    image: ""
+    description: "",
+    image: "",
 },
 ```
 
@@ -137,7 +146,7 @@ There are two different types of members you can add to a team. Featured, or reg
 
 Look at the JSON format of these files:
 
-```JSON
+```javascript
       department_name_here = [
         {
           featured: [
@@ -162,7 +171,7 @@ Look at the JSON format of these files:
 
 3. Copy the following JSON
 
-```JSON
+```javascript
       {
         name: "",
         jobTitle: "",
@@ -187,7 +196,7 @@ Look at the JSON format of these files:
 
 3. Copy the following JSON
 
-```JSON
+```javascript
       {
         name: "",
         description:

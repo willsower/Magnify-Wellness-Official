@@ -33,3 +33,4 @@ Have 2 initiatives:
 3. Art team is empty (currently I put placeholder for this)
 4. Get testemonials to display elegantly
 5. App page seems clunky, new/better content?
+6. Advertisements are too extreme? 
