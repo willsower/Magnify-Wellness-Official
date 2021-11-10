@@ -7,7 +7,7 @@ Populates app.js page
           name: "",
           reviewName: "",
           description: "",
-          stars: "",
+          stars: #,
         },
       ]
       
@@ -21,7 +21,7 @@ Populates app.js page
           name: "",
           reviewName: "",
           description: "",
-          stars: "",
+          stars: #,
       }
     ADD THE ABOVE JSON ITEM WITHIN THE CORRESPONDING SECTION
 */
