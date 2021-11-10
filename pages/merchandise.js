@@ -15,8 +15,7 @@ export async function getStaticProps() {
 
 export default function Merchandise({ data }) {
   return (
-    <Layout title="Contact">
-      <h1 className="text-center text-5xl">Magnify Store</h1>
+    <Layout title="Merchandise" pageName = "Magnify Store">
 
       <h2 className="text-center mt-12 text-2xl px-12">
         If you wish to make a purchase{" "}

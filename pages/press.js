@@ -15,8 +15,7 @@ export async function getStaticProps() {
 
 export default function Press({ data }) {
   return (
-    <Layout title="Press">
-      <h1 className="text-center text-5xl">Press</h1>
+    <Layout title="Press" pageName = "Press">
 
       {/* Loop through each section */}
       {data.map((section) => (

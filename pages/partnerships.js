@@ -16,8 +16,7 @@ export async function getStaticProps() {
 
 export default function Partnerships({ data }) {
   return (
-    <Layout title="Events">
-      <h1 className="text-center text-5xl">Partnerships</h1>
+    <Layout title="Partnerships" pageName = "Partnerships">
       <h5 className="text-2xl text-center mt-12">Partner with us!</h5>
 
       {/* Partners */}

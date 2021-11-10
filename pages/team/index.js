@@ -14,8 +14,7 @@ export async function getStaticProps() {
 
 export default function Team({ data }) {
   return (
-    <Layout title="Meet the Team">
-      <h1 className="text-center text-5xl">Meet the Team</h1>
+    <Layout title="Meet the Team" pageName = "Meet the Team">
 
       {data.map((section) => (
         <>
