@@ -1,20 +1,7 @@
 import React, { useState } from "react";
-import Layout from "../../components/layout";
 import Image from "next/image";
+import Layout from "../../components/layout";
 import Featured from "../../components/team/featured";
-import { art } from "../../data/team_data/departments/art";
-import { community } from "../../data/team_data/departments/community_engagement";
-import { events } from "../../data/team_data/departments/events";
-import { finance } from "../../data/team_data/departments/finance";
-import { logistics } from "../../data/team_data/departments/logistics";
-import { marketing } from "../../data/team_data/departments/marketing";
-import { mental } from "../../data/team_data/departments/mental_health_changemakers";
-import { mentorship } from "../../data/team_data/departments/mentorship";
-import { partnerships } from "../../data/team_data/departments/partnerships";
-import { research } from "../../data/team_data/departments/research_and_development";
-import { social } from "../../data/team_data/departments/social_media";
-import { tech } from "../../data/team_data/departments/tech";
-import { writing } from "../../data/team_data/departments/writing";
 
 export async function getStaticPaths() {
   return {
@@ -41,55 +28,12 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  // TODO: Hacky way of doing this, I was trying to dynamically import the folders. Figure out how to do this cleanly
-  const val = params.department.split("_")[0];
-  var object = "";
-
-  switch (val) {
-    case "art":
-      object = art;
-      break;
-    case "community":
-      object = community;
-      break;
-    case "events":
-      object = events;
-      break;
-    case "finance":
-      object = finance;
-      break;
-    case "logistics":
-      object = logistics;
-      break;
-    case "marketing":
-      object = marketing;
-      break;
-    case "mental":
-      object = mental;
-      break;
-    case "mentorship":
-      object = mentorship;
-      break;
-    case "partnerships":
-      object = partnerships;
-      break;
-    case "research":
-      object = research;
-      break;
-    case "social":
-      object = social;
-      break;
-    case "tech":
-      object = tech;
-      break;
-    case "writing":
-      object = writing;
-      break;
-  }
+  const file = await import(`../../data/team_data/departments/${params.department}.js`);
+  const keys = Object.keys(file);
 
   return {
     props: {
-      data: object,
+      data: file[keys[0]],
     },
   };
 }
@@ -103,7 +47,7 @@ export default function Department({ data }) {
         <Layout title={`Meet the ${section.departmentName} Team`}>
           {/* If no content, then empty team */}
           {section.departmentDescription == "" ? (
-            <h1 className="font-bold text-4xl text-center pt-24 pb-12 md:text-5xl">
+            <h1 className="font-bold text-4xl text-center pt-12 pb-12 md:text-5xl">
               {section.departmentName} Team Coming Soon!
             </h1>
           ) : (
