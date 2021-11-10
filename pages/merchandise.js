@@ -36,7 +36,7 @@ export default function Merchandise({ data }) {
             <Image
               src={`/img/merchandise/${item.image}`}
               height="200"
-              width="200"
+              width="220"
               className="rounded-lg"
             />
             <h4 className="text-xl">{item.name}</h4>

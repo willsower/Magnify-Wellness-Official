@@ -1,5 +1,7 @@
 :root {
     --primary-color: #33cccc;
+    --secondary-color: #ecf5f5;
+    --tercerary-color: #FFCC00;
 }
 
 .border-primary {
@@ -8,6 +10,14 @@
 
 .bg-primary {
     border-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-tercerary {
+    background-color: var(--tercerary-color);
 }
 
 .button {

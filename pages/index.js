@@ -93,13 +93,13 @@ export default function Home() {
           Our mission is to ensure that everyone gains equal access to mental
           health support through outreach programs and technology.
         </h2>
-        <div className={`${styles.button} mt-12 text-center`}>
+        <div className={`button w-36 m-auto mt-12 text-center`}>
           <Link href="/">Get Involved</Link>
         </div>
       </section>
 
       {/* About */}
-      <section className={`${styles.bg_primary} relative py-36 `}>
+      <section className={`bg-secondary relative py-36 `}>
         <h1 className={styles.home_header}>Our Award-Winning App</h1>
 
         {/* Features */}
@@ -155,7 +155,7 @@ export default function Home() {
       </section>
 
       {/* Press */}
-      <section className={`${styles.bg_primary} relative py-36`}>
+      <section className={`bg-secondary relative py-36`}>
         <h1 className={styles.home_header}>Press</h1>
         <div className="md:flex md:max-w-4xl md:m-auto">
           <Press
@@ -225,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* Blog */}
-      <section className={`${styles.bg_primary} relative py-36`}>
+      <section className={`bg-secondary relative py-36`}>
         <h1 className={styles.home_header}>Blog</h1>
         <div className="md:flex md:max-w-xl md:m-auto">
           <Blog
@@ -247,7 +247,7 @@ export default function Home() {
       </section>
 
       {/* Join Newsletter */}
-      <section className={`${styles.bg_secondary} relative text-center py-6`}>
+      <section className={`bg-tercerary relative text-center py-6`}>
         <div>
           <div className="text-2xl">🔎 Subscribe to our newsletter</div>
           <form
