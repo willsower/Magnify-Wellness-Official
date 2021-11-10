@@ -1,3 +1,31 @@
+/*
+Populates app.js page
+
+  Current Structure
+      reviews = [
+        {
+          name: "",
+          reviewName: "",
+          description: "",
+          stars: "",
+        },
+      ]
+      
+  - name refers to the name of the person leaving the review
+  - reviewName is the title the user added
+  - description is the description
+  - stars is how many stars the user had (example 4 if 4/5 or 5 if 5/5) this is int
+
+  TO ADD ANOTHER ITEM, COPY THE FOLLOWING
+      {
+          name: "",
+          reviewName: "",
+          description: "",
+          stars: "",
+      }
+    ADD THE ABOVE JSON ITEM WITHIN THE CORRESPONDING SECTION
+*/
+
 export const reviews = [
   {
     name: "Sparkly Cupcakes",
