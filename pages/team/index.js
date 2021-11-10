@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Layout from "../../components/layout";
-import { Featured } from "../../components/team/featured";
+import Featured from "../../components/team/featured";
 
 // Data
 import { team } from "../../data/team_data/team_home";

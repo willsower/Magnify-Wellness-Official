@@ -1,10 +1,11 @@
-function Featured({name, jobTitle, description, image}) {
+import Image from "next/image";
 
+function Featured({name, jobTitle, description, image}) {
     return (
         <div className="mt-12 text-center px-4 lg:flex lg:justify-center">
         {/* Image */}
         <div className="lg:mr-6 lg:mt-12">
-          {person.image == "" ? (
+          {image == "" ? (
             <Image
               src={`/img/team/members/no_image.png`}
               width="200"

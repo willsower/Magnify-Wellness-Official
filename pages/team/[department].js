@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Layout from "../../components/layout";
 import Image from "next/image";
-import { Featured } from "../../components/team/featured";
+import Featured from "../../components/team/featured";
 import { art } from "../../data/team_data/departments/art";
 import { community } from "../../data/team_data/departments/community_engagement";
 import { events } from "../../data/team_data/departments/events";
