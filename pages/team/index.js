@@ -1,6 +1,8 @@
-import Layout from "../../components/layout";
 import Image from "next/image";
+import Layout from "../../components/layout";
+import { Featured } from "../../components/team/featured";
 
+// Data
 import { team } from "../../data/team_data/team_home";
 
 // Fetch data on client side
@@ -14,30 +16,17 @@ export async function getStaticProps() {
 
 export default function Team({ data }) {
   return (
-    <Layout title="Meet the Team" pageName = "Meet the Team">
-
+    <Layout title="Meet the Team" pageName="Meet the Team">
       {data.map((section) => (
         <>
           {/* Featured People */}
           {section.person.map((person) => (
-            <div className="mt-12 text-center px-4 lg:flex lg:justify-center">
-              {/* Image */}
-              <div className="lg:mr-6 lg:mt-12">
-                <Image
-                  src={`/img/team/members/${person.image}`}
-                  width="200"
-                  height="200"
-                  className="rounded-full"
-                />
-              </div>
-
-              {/* Content */}
-              <div className="mt-4 md:max-w-xl md:m-auto md:mt-4 lg:m-0 lg:mt-4 lg:max-w-2xl">
-                <h1 className="text-4xl">{person.name}</h1>
-                <p className="italic text-2xl mt-2">{person.jobTitle}</p>
-                <p className="text-lg mt-2">{person.description}</p>
-              </div>
-            </div>
+            <Featured
+              name={person.name}
+              jobTitle={person.jobTitle}
+              description={person.description}
+              image={person.image}
+            />
           ))}
 
           <h3 className="mt-24 text-5xl text-center">Departments</h3>
@@ -55,7 +44,7 @@ export default function Team({ data }) {
                   </div>
 
                   {/* Content */}
-                  <div className = "relative h-28">
+                  <div className="relative h-28">
                     <hr className="border-2" />
                     <p className="text-3xl text-center p-4">
                       {department.departmentName}
