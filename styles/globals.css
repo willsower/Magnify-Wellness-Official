@@ -1,14 +1,36 @@
 :root {
     --primary-color: #33cccc;
+    --secondary-color: #ecf5f5;
+    --tercerary-color: #FFCC00;
 }
+
+/* Borders */
 
 .border-primary {
     border-color: var(--primary-color); 
 }
 
+/* Background */
+
 .bg-primary {
     border-color: var(--primary-color);
 }
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-tercerary {
+    background-color: var(--tercerary-color);
+}
+
+/* Test */
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+/* Button */
 
 .button {
     background-color: var(--primary-color);

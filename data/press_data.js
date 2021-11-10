@@ -1,3 +1,41 @@
+/*
+Populates Press.js page
+
+  Current Structure: There are two sections, Features and Workshops as follows
+      press = [
+        {
+          title: "Features",
+          docs: [
+
+          ]
+        },
+        {
+          title: "Workshops",
+          docs: [
+
+          ]
+        }
+      ]
+  Within each of the docs: [] is a JSON unit which is...
+      docs: [
+        {
+          pressName: "",
+          articleName: "",
+          date: "",
+          buttonPath: "",
+        }
+      ]
+
+  TO ADD ANOTHER ARTICLE, COPY THE FOLLOWING
+      {
+        pressName: "",
+        articleName: "",
+        date: "",
+        buttonPath: "",
+      }
+    ADD THE ABOVE JSON ITEM WITHIN THE docs[] IN THE CORRESPONDING SECTION
+*/
+
 export const press = [
   {
     title: "Features",

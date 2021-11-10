@@ -2,7 +2,7 @@ import Head from "next/head";
 import Nav from "./nav";
 import Footer from "./footer";
 
-function Layout({children, title}) {
+function Layout({children, title, pageName}) {
   return (
     <div>
       <Head>
@@ -12,6 +12,7 @@ function Layout({children, title}) {
       </Head>
       <Nav />
       <main className = "py-12">
+          <h1 className="text-center text-5xl">{pageName}</h1>
           {children}
       </main>
       <Footer />

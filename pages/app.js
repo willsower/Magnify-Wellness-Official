@@ -17,8 +17,7 @@ export default function App({ data }) {
   const star = 5;
 
   return (
-    <Layout title="App">
-      <h1 className="text-center text-5xl">The Magnify Wellness App</h1>
+    <Layout title="App" pageName = "The Magnify Wellness App">
 
       <h2 className="text-center text-4xl mt-12">Reviews on the Store</h2>
       <div className="text-center md:grid md:grid-cols-2 md:m-auto md:max-w-2xl">

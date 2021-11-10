@@ -1,3 +1,33 @@
+/*
+Populates merchandise.js page
+
+  Current Structure
+      merchandise = [
+        {
+          name: "",
+          price: "",
+          image: "",
+          link: "",
+        },
+      ]
+      
+  - name refers to the name of the item
+  - price refers to the price (string)
+  - image refers to the name of the image (not the path)
+  - link is blank for now unless this is something you guys want to add later
+
+  TO ADD ANOTHER ITEM, COPY THE FOLLOWING
+      {
+          name: "",
+          price: "",
+          image: "",
+          link: "",
+      }
+    ADD THE ABOVE JSON ITEM WITHIN THE CORRESPONDING SECTION
+
+  ADD THE IMAGE TO /public/img/merchandise folder
+*/
+
 export const merchandise = [
   {
     name: "Hoodie",

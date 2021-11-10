@@ -1,7 +1,4 @@
 /* Footer CSS */
-.bg_primary {
-    background-color: #ecf5f5;
-}
 
 .footer_header {
     font-weight: bold;
@@ -26,11 +23,6 @@
 
 .footer_social_item:hover {
     cursor: pointer;
-}
-
-/* sm: 640px */
-@media (min-width: 640px) { 
-
 }
 
 /* md: 768px */

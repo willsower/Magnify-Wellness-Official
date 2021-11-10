@@ -5,10 +5,10 @@ import styles from "../../styles/Home.module.css";
 // Feature within About Section
 function Feature({ image_path, feature_name, feature_desc }) {
   return (
-    <div className={styles.feature}>
+    <div className= "text-center w-44 m-auto">
       <Image src={image_path} height="70" width="70" />
-      <h2 className={styles.feature_header}>{feature_name}</h2>
-      <p className={styles.feature_desc}>{feature_desc}</p>
+      <h2 className="text-2xl font-bold">{feature_name}</h2>
+      <p className="text-md">{feature_desc}</p>
     </div>
   );
 }
@@ -16,14 +16,14 @@ function Feature({ image_path, feature_name, feature_desc }) {
 // Press Card
 function Press({ image_path, press_name, article_link, hei, wid }) {
   return (
-    <div className={styles.press}>
+    <div className={`${styles.press} relative m-auto text-center mt-12 py-6 w-64 h-80 bg-white rounded-lg`}>
       <Image src={image_path} height={hei} width={wid} />
       <h2 className="mt-4 font-medium text-lg px-5 absolute top-32">
         {press_name}
       </h2>
 
       <Link href={article_link}>
-        <div className={styles.press_button}>Go to article</div>
+        <div className="button absolute bottom-8 left-0 right-0 m-auto w-32">Go to article</div>
       </Link>
     </div>
   );

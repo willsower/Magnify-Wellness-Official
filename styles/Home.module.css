@@ -9,24 +9,6 @@
   padding-bottom: 36px;
 }
 
-.bg_primary {
-    background-color: #ecf5f5;
-}
-
-.bg_secondary {
-    background-color: #FFCC00;
-}
-
-.button {
-    background-color: #33cccc;
-    border-radius: 0.50rem;
-    padding: 0.33rem 0rem;
-    width: 7rem;
-    color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* Headers for each section */
 
 .home_header {
@@ -49,67 +31,18 @@
 
 /* End Headers for each section */
 
-/* About Section */
-
-.feature {
-  text-align: center;
-  width: 200px;
-}
-
-.feature_header {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.feature_desc {
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-/* End About Section */
-
 /* Press section */
 
 .press {
-  background-color: #fff;
-  border-radius: 1rem;
-  width: 16rem;
-  height: 20rem;
   --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04))
     drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
   -webkit-transition: transform 0.3s ease-in-out;
   -moz-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  text-align: center;
-  padding: 4px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: auto;
-  margin-top: 50px;
-  position: relative;
 }
 
 .press:hover {
   transform: scale(1.05);
-}
-
-.press_button {
-    background-color: #33cccc;
-    border-radius: 0.50rem;
-    padding: 0.33rem 0rem;
-    width: 7rem;
-    color: #fff;
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-}
-  
-.button:hover, .press_button:hover {
-    cursor: pointer;
-    color: #000;
 }
 
 /* End press section */
@@ -164,11 +97,6 @@
 }
 
 /* End of stats section */
-
-
-/* sm: 640px */
-@media (min-width: 640px) {
-}
 
 /* md: 768px */
 @media (min-width: 768px) {

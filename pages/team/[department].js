@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Layout from "../../components/layout";
 import Image from "next/image";
+import Featured from "../../components/team/featured";
 import { art } from "../../data/team_data/departments/art";
 import { community } from "../../data/team_data/departments/community_engagement";
 import { events } from "../../data/team_data/departments/events";
@@ -117,33 +118,12 @@ export default function Department({ data }) {
 
               {/* Featured */}
               {section.featured.map((person) => (
-                <div className="mt-12 text-center px-4 lg:flex lg:justify-center">
-                  {/* Image */}
-                  <div className="lg:mr-6 lg:mt-12">
-                    {person.image == "" ? (
-                      <Image
-                        src={`/img/team/members/no_image.png`}
-                        width="200"
-                        height="200"
-                        className="rounded-full"
-                      />
-                    ) : (
-                      <Image
-                        src={`/img/team/members/${person.image}`}
-                        width="200"
-                        height="200"
-                        className="rounded-full"
-                      />
-                    )}
-                  </div>
-
-                  {/* Content */}
-                  <div className="mt-4 md:max-w-xl md:m-auto md:mt-4 lg:m-0 lg:mt-4 lg:max-w-2xl">
-                    <h1 className="text-4xl">{person.name}</h1>
-                    <p className="italic text-2xl mt-2">{person.jobTitle}</p>
-                    <p className="text-lg mt-2">{person.description}</p>
-                  </div>
-                </div>
+                <Featured
+                  name={person.name}
+                  jobTitle={person.jobTitle}
+                  description={person.description}
+                  image={person.image}
+                />
               ))}
 
               {/* Rest of Team */}
@@ -171,7 +151,11 @@ export default function Department({ data }) {
                     )}
                     <p className="mt-4 font-bold text-lg">{person.name}</p>
 
-                    {indexHovered == index && <div className=" bg-yellow-400 w-60 p-4 z-50 absolute left-0 rounded-lg">{person.description}</div>}
+                    {indexHovered == index && (
+                      <div className=" bg-yellow-400 w-60 p-4 z-50 absolute left-0 rounded-lg">
+                        {person.description}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

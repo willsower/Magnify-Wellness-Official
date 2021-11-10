@@ -3,8 +3,7 @@ import Layout from "../components/layout";
 
 export default function Contact() {
   return (
-    <Layout title="Contact">
-      <h1 className="text-center text-5xl">Contact Us</h1>
+    <Layout title="Contact" pageName = "Contact Us">
 
       <div className="relative w-16 h-16 m-auto mt-12">
         <Image src="/img/logo.png" layout="fill" objectFit="contain" />
