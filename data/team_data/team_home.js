@@ -1,3 +1,46 @@
+/*
+Populates /team/index.js page
+
+  Current Structure is split into person, and departments
+      team = [
+        {
+          person: [
+            {
+
+            }
+          ],
+          departments: [
+            {
+
+            }
+          ]
+        },
+      ]
+    
+      - person refers to the featured, for now you have your CEO and COO
+      - departments refers to the various departments you currently have
+      
+
+  TO ADD ANOTHER FEATURED PERSON, COPY THE FOLLOWING
+      {
+          name: "",
+          jobTitle: "",
+          description: "",
+          image: "",
+      }
+    ADD THE ABOVE JSON ITEM WITHIN THE PERSON SECTION
+    ADD THE IMAGE TO /public/img/team/members folder
+
+  TO ADD ANOTHER DEPARTMENT, COPY THE FOLLOWING
+      {
+          departmentName: "",
+          departmentImage: "",
+          path: "",
+      }
+    ADD THE ABOVE JSON ITEM WITHIN THE DEPARTMENT SECTION
+    ADD THE IMAGE TO /public/img/team/department_logos folder
+*/
+
 export const team = [
   {
     // These are featured people on home page above the teams
