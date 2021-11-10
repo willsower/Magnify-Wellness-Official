@@ -23,9 +23,9 @@ Populates merchandise.js page
           image: "",
           link: "",
       }
-    ADD THE ABOVE JSON ITEM WITHIN THE docs[] IN THE CORRESPONDING SECTION
+    ADD THE ABOVE JSON ITEM WITHIN THE CORRESPONDING SECTION
 
-  ADD THE IMAGE TO /public/img/partners folder
+  ADD THE IMAGE TO /public/img/merchandise folder
 */
 
 export const merchandise = [
