@@ -1,6 +1,62 @@
-// Add another object, copy and paste below
-// When adding image path. Just add the name of the file, don't need to add complete path.
-// If you add another image, add it to /public/img/getting_involved folder
+/*
+Populates get_involved.js page
+
+  Current Structure
+      get_involved = [
+        {
+          name: "",
+          description: "",
+          image: "",
+          buttons: [
+            {
+              name: "",
+              path: "",
+            }
+          ]
+        },
+      ]
+      
+  - name refers to the name of the item
+  - description refers to the description
+  - image refers to the name of the image (not the path)
+  - buttons is an array of buttons
+      - name: Refers to button name (For example: View the database)
+      - path: Refers to the website you direct the user to when clicking on the button
+
+  TO ADD ANOTHER ITEM, COPY THE FOLLOWING
+      FOR ONE BUTTON
+      {
+          name: "",
+          description: "",
+          image: "",
+          buttons: [
+            {
+              name: "",
+              path: "",
+            }
+          ]
+      }
+
+      OR FOR TWO BUTTONS/MULTIPLE
+        {
+          name: "",
+          description: "",
+          image: "",
+          buttons: [
+            {
+              name: "",
+              path: "",
+            },
+            {
+              name: "",
+              path: "",
+            }
+          ]
+      }
+    ADD THE ABOVE JSON ITEM WITHIN THE CORRESPONDING SECTION
+
+  ADD THE IMAGE TO /public/img/getting_involved folder
+*/
 
 export const get_involved = [
   // First Object
