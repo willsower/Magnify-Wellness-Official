@@ -1,4 +1,6 @@
 /*
+Populates Press.js page
+
   Current Structure: There are two sections, Features and Workshops as follows
       press = [
         {
