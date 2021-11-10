@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className={`${styles.bg_primary} p-12 md:flex md:justify-center`}>
+    <footer className={`bg-secondary p-12 md:flex md:justify-center`}>
       <div className="md:w-64 pt-12 lg:w-96">
         {/* Logo */}
         <div className="flex pt-1">
