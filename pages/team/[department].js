@@ -74,7 +74,7 @@ export default function Department({ data }) {
               <div className="mt-12 md:grid md:grid-cols-2 md:gap-4 md:max-w-xl md:m-auto md:mt-12 lg:grid-cols-3 lg:max-w-4xl">
                 {section.team.map((person, index) => (
                   <div
-                    className="w-60 h-44 bg-blue-200 m-auto mt-4 text-center p-4 relative hover:bg-yellow-400 rounded-lg"
+                    className="w-60 h-44 bg-primary m-auto mt-4 text-center p-4 relative hover:bg-yellow-400 rounded-lg"
                     onMouseEnter={() => setIndexHovered(index)}
                     onMouseLeave={() => setIndexHovered(-1)}
                   >
