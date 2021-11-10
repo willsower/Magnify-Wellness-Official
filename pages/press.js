@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 import Link from "next/link";
-import styles from "../styles/Press.module.css";
 
 import { press } from "../data/press_data";
 
@@ -29,14 +28,14 @@ export default function Press({ data }) {
             {section.docs.map((doc) => (
               <div className="px-6 mt-8 max-w-lg m-auto md:max-w-none md:px-0 md:m-0">
                 <h4 key = "pressName"
-                  className={`${styles.text_primary} text-2xl mb-2 font-bold`}
+                  className={`text-primary text-2xl mb-2 font-bold`}
                 >
                   {doc.pressName}
                 </h4>
                 <hr className="border-yellow-300 border" />
                 <h4 key = "articleName" className="text-2xl italic mt-2">{doc.articleName}</h4>
                 <p key = "date" className="text-xl mt-2">{doc.date}</p>
-                <div className={`${styles.button} mt-4 text-center w-24`}>
+                <div className={`button mt-4 text-center w-24`}>
                   <Link href={doc.buttonPath}>Read More</Link>
                 </div>
               </div>

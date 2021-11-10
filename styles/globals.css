@@ -4,9 +4,13 @@
     --tercerary-color: #FFCC00;
 }
 
+/* Borders */
+
 .border-primary {
     border-color: var(--primary-color); 
 }
+
+/* Background */
 
 .bg-primary {
     border-color: var(--primary-color);
@@ -19,6 +23,14 @@
 .bg-tercerary {
     background-color: var(--tercerary-color);
 }
+
+/* Test */
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+/* Button */
 
 .button {
     background-color: var(--primary-color);
