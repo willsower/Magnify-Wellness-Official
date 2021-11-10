@@ -1,7 +1,7 @@
 /*
 Populates partners.js page
 
-  Current Structure: There are two sections, Features and Workshops as follows
+  Current Structure
       partners = [
         {
           name: "",
