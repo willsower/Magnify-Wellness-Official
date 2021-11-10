@@ -11,13 +11,15 @@ Populates merchandise.js page
         },
       ]
       
-  - name refers to the name of the partner company
+  - name refers to the name of the item
+  - price refers to the price (string)
   - image refers to the name of the image (not the path)
-  - link refers to the partner's website page
+  - link is blank for now unless this is something you guys want to add later
 
-  TO ADD ANOTHER PARTNER, COPY THE FOLLOWING
+  TO ADD ANOTHER ITEM, COPY THE FOLLOWING
       {
           name: "",
+          price: "",
           image: "",
           link: "",
       }
